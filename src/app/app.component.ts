@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'dates';
+  showContainerDisplay: boolean = false;
+  containers: number = 0;
+
+  onDateSelected(selectedDate: string) {
+        this.containers = Math.floor(Math.random() * 10) + 1;
+
+       this.showContainerDisplay = true;
+  }
 }
