@@ -7,6 +7,7 @@ import { ContainerDisplayComponent } from './container-display/container-display
 import { FormsModule } from '@angular/forms';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from "@angular/material/form-field";
+import { MatSelectModule } from "@angular/material/select"
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { MatFormFieldModule } from "@angular/material/form-field";
     AppRoutingModule,
     FormsModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    MatSelectModule
   ],
   providers: [],
   bootstrap: [AppComponent]
