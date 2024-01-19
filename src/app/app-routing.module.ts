@@ -5,9 +5,9 @@ import { ContainerDisplayComponent } from './container-display/container-display
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 const routes: Routes = [
-  { path: '**', component: PageNotFoundComponent },
   { path: 'dates', component: DateSelectorComponent},
-  { path: 'planner', component: ContainerDisplayComponent}
+  { path: 'planner', component: ContainerDisplayComponent},
+  { path: '', component: PageNotFoundComponent }
 ];
 
 @NgModule({
